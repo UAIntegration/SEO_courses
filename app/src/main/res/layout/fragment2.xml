@@ -17,6 +17,7 @@
         android:layout_height="wrap_content"/>
     <ImageView
         android:id="@+id/imagekachzapr2"
+        android:src="@drawable/o_0b8dd2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
     <!--android:textColor="@color/opaque_red"
