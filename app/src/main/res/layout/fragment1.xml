@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:textIsSelectable="true"
+        android:gravity="center">
+        <TextView
+            android:textIsSelectable="true"
+            android:id="@+id/text_01t"
+            android:textStyle="bold"
+            android:padding="@dimen/text01_padding"
+            android:textSize="@dimen/text01_text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textIsSelectable="true"
+            android:id="@+id/text_02t"
+            android:textSize="@dimen/text02_text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textIsSelectable="true"
+            android:id="@+id/text_03t"
+            android:padding="@dimen/text01_padding"
+            android:textSize="@dimen/text01_text_size"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textIsSelectable="true"
+            android:id="@+id/text_04t"
+            android:textSize="@dimen/text02_text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textIsSelectable="true"
+            android:id="@+id/text_05t"
+            android:textStyle="bold"
+            android:padding="@dimen/text01_padding"
+            android:textSize="@dimen/text01_text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textIsSelectable="true"
+            android:id="@+id/text_06t"
+            android:textSize="@dimen/text02_text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@drawable/border"
+        android:stretchColumns="*"
+        android:textIsSelectable="true"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <TableRow android:background="@drawable/border2">
+            <TextView android:layout_width="fill_parent"
+                android:background="@drawable/border2"
+                android:layout_height="wrap_content"
+                android:text="ВЧ"
+                android:gravity="center_horizontal"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                />
+            <TextView android:layout_width="fill_parent"
+                android:background="@drawable/border2"
+                android:layout_height="wrap_content"
+                android:text="СЧ"
+                android:gravity="center_horizontal"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                />
+            <TextView android:layout_width="fill_parent"
+                android:background="@drawable/border2"
+                android:layout_height="wrap_content"
+                android:text="НЧ"
+                android:gravity="center_horizontal"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                />
+            <TextView android:layout_width="fill_parent"
+                android:background="@drawable/border2"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:gravity="center_horizontal"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView android:layout_width="fill_parent"
+                android:background="@drawable/border"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:gravity="center_horizontal"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                />
+            <TextView android:layout_width="fill_parent"
+                android:background="@drawable/border"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:gravity="center_horizontal"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                />
+            <TextView android:layout_width="fill_parent"
+                android:background="@drawable/border"
+                android:layout_height="wrap_content"
+                android:text="300"
+                android:gravity="center_horizontal"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                />
+            <TextView android:layout_width="fill_parent"
+                android:background="@drawable/border"
+                android:layout_height="wrap_content"
+                android:text="Украина"
+                android:gravity="center_horizontal"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView android:layout_width="fill_parent"
+                android:background="@drawable/border"
+                android:layout_height="wrap_content"
+                android:text="300"
+                android:gravity="center_horizontal"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                />
+            <TextView android:layout_width="fill_parent"
+                android:background="@drawable/border"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:gravity="center_horizontal"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                />
+            <TextView android:layout_width="fill_parent"
+                android:background="@drawable/border"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:gravity="center_horizontal"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                />
+            <TextView android:layout_width="fill_parent"
+                android:background="@drawable/border"
+                android:layout_height="wrap_content"
+                android:text="Днепр"
+                android:gravity="center_horizontal"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                />
+        </TableRow>
+    </TableLayout>
+        <TextView
+            android:textIsSelectable="true"
+            android:id="@+id/text_07t"
+            android:textSize="@dimen/text02_text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/imagesearchkvart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textIsSelectable="true"
+            android:id="@+id/text_08t"
+            android:padding="@dimen/text01_padding"
+            android:textSize="@dimen/text01_text_size"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textIsSelectable="true"
+            android:id="@+id/text_09t"
+            android:textSize="@dimen/text02_text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <!--android:textColor="@color/opaque_red"
+        android:scaleType="fitXY"
+            android:text="@string/hello_world"-->
+        <!--android:textSize="@dimen/hello_text_size"-->
+</LinearLayout>
