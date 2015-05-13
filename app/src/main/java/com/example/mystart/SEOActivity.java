@@ -43,6 +43,8 @@ public class SEOActivity extends ActionBarActivity
 
     MyFragment1 fragments1 = new MyFragment1();
     MyFragment2 fragments2 = new MyFragment2();
+    MyFragment3 fragments3 = new MyFragment3();
+    MyFragment4 fragments4 = new MyFragment4();
     android.app.FragmentManager fragmentManager2 = getFragmentManager();
 
     @Override
@@ -90,10 +92,90 @@ public class SEOActivity extends ActionBarActivity
             case 3:
                 mTitle = getString(R.string.title_section3);
                 Toast.makeText(this, "Third Page", Toast.LENGTH_SHORT).show();
+                fragmentManager2.beginTransaction()
+                        .replace(R.id.frgmCont, fragments3)
+                        .addToBackStack("myStack")
+                        .commit();
                 break;
             case 4:
                 mTitle = getString(R.string.title_section4);
                 Toast.makeText(this, "Four Page", Toast.LENGTH_SHORT).show();
+                fragmentManager2.beginTransaction()
+                        .replace(R.id.frgmCont, fragments4)
+                        .addToBackStack("myStack")
+                        .commit();
+                break;
+            case 5:
+                mTitle = getString(R.string.title_section5);
+                Toast.makeText(this, "Five Page", Toast.LENGTH_SHORT).show();
+                fragmentManager2.beginTransaction()
+                        .replace(R.id.frgmCont, fragments4)
+                        .addToBackStack("myStack")
+                        .commit();
+                break;
+            case 6:
+                mTitle = getString(R.string.title_section6);
+                Toast.makeText(this, "Six Page", Toast.LENGTH_SHORT).show();
+                fragmentManager2.beginTransaction()
+                        .replace(R.id.frgmCont, fragments4)
+                        .addToBackStack("myStack")
+                        .commit();
+                break;
+            case 7:
+                mTitle = getString(R.string.title_section7);
+                Toast.makeText(this, "Seven Page", Toast.LENGTH_SHORT).show();
+                fragmentManager2.beginTransaction()
+                        .replace(R.id.frgmCont, fragments4)
+                        .addToBackStack("myStack")
+                        .commit();
+                break;
+            case 8:
+                mTitle = getString(R.string.title_section8);
+                Toast.makeText(this, "Eight Page", Toast.LENGTH_SHORT).show();
+                fragmentManager2.beginTransaction()
+                        .replace(R.id.frgmCont, fragments4)
+                        .addToBackStack("myStack")
+                        .commit();
+                break;
+            case 9:
+                mTitle = getString(R.string.title_section9);
+                Toast.makeText(this, "Nine Page", Toast.LENGTH_SHORT).show();
+                fragmentManager2.beginTransaction()
+                        .replace(R.id.frgmCont, fragments4)
+                        .addToBackStack("myStack")
+                        .commit();
+                break;
+            case 10:
+                mTitle = getString(R.string.title_section10);
+                Toast.makeText(this, "Ten Page", Toast.LENGTH_SHORT).show();
+                fragmentManager2.beginTransaction()
+                        .replace(R.id.frgmCont, fragments4)
+                        .addToBackStack("myStack")
+                        .commit();
+                break;
+            case 11:
+                mTitle = getString(R.string.title_section11);
+                Toast.makeText(this, "Eleven Page", Toast.LENGTH_SHORT).show();
+                fragmentManager2.beginTransaction()
+                        .replace(R.id.frgmCont, fragments4)
+                        .addToBackStack("myStack")
+                        .commit();
+                break;
+            case 12:
+                mTitle = getString(R.string.title_section12);
+                Toast.makeText(this, "Twelve Page", Toast.LENGTH_SHORT).show();
+                fragmentManager2.beginTransaction()
+                        .replace(R.id.frgmCont, fragments4)
+                        .addToBackStack("myStack")
+                        .commit();
+                break;
+            case 13:
+                mTitle = getString(R.string.title_section13);
+                Toast.makeText(this, "Thirteen Page", Toast.LENGTH_SHORT).show();
+                fragmentManager2.beginTransaction()
+                        .replace(R.id.frgmCont, fragments4)
+                        .addToBackStack("myStack")
+                        .commit();
                 break;
         }
     }

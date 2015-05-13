@@ -6,21 +6,17 @@
     android:orientation="vertical"
     android:gravity="center">
     <TextView
-        android:textIsSelectable="true"
-        android:id="@+id/text_01t"
+        android:text="@string/text_11"
+        android:padding="@dimen/text01_padding"
+        android:textSize="@dimen/text01_text_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="@string/text_22"
         android:textSize="@dimen/text02_text_size"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
-    <ImageView
-        android:id="@+id/imagekachzapr"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-    <ImageView
-        android:id="@+id/imagekachzapr2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
     <!--android:textColor="@color/opaque_red"
-    android:scaleType="fitXY"
         android:text="@string/hello_world"-->
     <!--android:textSize="@dimen/hello_text_size"-->
 </LinearLayout>

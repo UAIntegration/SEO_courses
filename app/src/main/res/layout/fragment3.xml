@@ -7,16 +7,18 @@
     android:gravity="center">
     <TextView
         android:textIsSelectable="true"
+        android:linksClickable="true"
+        android:autoLink="web"
         android:id="@+id/text_01t"
         android:textSize="@dimen/text02_text_size"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
     <ImageView
-        android:id="@+id/imagekachzapr"
+        android:id="@+id/imageindeks"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
     <ImageView
-        android:id="@+id/imagekachzapr2"
+        android:id="@+id/imageindeks2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
     <!--android:textColor="@color/opaque_red"

@@ -2,9 +2,18 @@
     <string name="app_name">SEO courses</string>
 
     <string name="title_section1">Классификация запросов</string>
-    <string name="title_section2">Part 2</string>
-    <string name="title_section3">Part 3</string>
-    <string name="title_section4">Part 4</string>
+    <string name="title_section2">Качество Запросов</string>
+    <string name="title_section3">Поисковая оптимизация. Введение</string>
+    <string name="title_section4">Работа с семантическим ядром сайта</string>
+    <string name="title_section5">Оперативно подобрать запрос, подготовить страницу к продвижению</string>
+    <string name="title_section6">Способы проверки позиций</string>
+    <string name="title_section7">SEO оптимизация страницы</string>
+    <string name="title_section8">Факторы оптимизации страниц</string>
+    <string name="title_section9">Проверка релевантности страницы</string>
+    <string name="title_section10">Перелинковка на сайте</string>
+    <string name="title_section11">Якоря на страницах сайта</string>
+    <string name="title_section12">Оформляем сниппет в Google</string>
+    <string name="title_section13">Сайт продажи авто</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>

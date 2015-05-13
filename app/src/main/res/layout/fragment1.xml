@@ -4,47 +4,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:textIsSelectable="true"
         android:gravity="center">
         <TextView
             android:textIsSelectable="true"
             android:id="@+id/text_01t"
-            android:textStyle="bold"
-            android:padding="@dimen/text01_padding"
-            android:textSize="@dimen/text01_text_size"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <TextView
-            android:textIsSelectable="true"
-            android:id="@+id/text_02t"
-            android:textSize="@dimen/text02_text_size"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <TextView
-            android:textIsSelectable="true"
-            android:id="@+id/text_03t"
-            android:padding="@dimen/text01_padding"
-            android:textSize="@dimen/text01_text_size"
-            android:textStyle="bold"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <TextView
-            android:textIsSelectable="true"
-            android:id="@+id/text_04t"
-            android:textSize="@dimen/text02_text_size"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <TextView
-            android:textIsSelectable="true"
-            android:id="@+id/text_05t"
-            android:textStyle="bold"
-            android:padding="@dimen/text01_padding"
-            android:textSize="@dimen/text01_text_size"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <TextView
-            android:textIsSelectable="true"
-            android:id="@+id/text_06t"
             android:textSize="@dimen/text02_text_size"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -147,7 +110,7 @@
     </TableLayout>
         <TextView
             android:textIsSelectable="true"
-            android:id="@+id/text_07t"
+            android:id="@+id/text_02t"
             android:textSize="@dimen/text02_text_size"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -157,15 +120,7 @@
             android:layout_height="wrap_content"/>
         <TextView
             android:textIsSelectable="true"
-            android:id="@+id/text_08t"
-            android:padding="@dimen/text01_padding"
-            android:textSize="@dimen/text01_text_size"
-            android:textStyle="bold"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <TextView
-            android:textIsSelectable="true"
-            android:id="@+id/text_09t"
+            android:id="@+id/text_03t"
             android:textSize="@dimen/text02_text_size"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
