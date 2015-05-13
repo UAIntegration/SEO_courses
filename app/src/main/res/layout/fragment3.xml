@@ -21,8 +21,54 @@
         android:id="@+id/imageindeks2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
-    <!--android:textColor="@color/opaque_red"
-    android:scaleType="fitXY"
-        android:text="@string/hello_world"-->
-    <!--android:textSize="@dimen/hello_text_size"-->
+    <TextView
+        android:textIsSelectable="true"
+        android:id="@+id/text_02t"
+        android:textSize="@dimen/text02_text_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/imagerelreq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/imagerelreq2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textIsSelectable="true"
+        android:id="@+id/text_03t"
+        android:textSize="@dimen/text02_text_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/imagerelreq3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textIsSelectable="true"
+        android:id="@+id/text_04t"
+        android:textSize="@dimen/text02_text_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/imagerelreq4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textIsSelectable="true"
+        android:id="@+id/text_05t"
+        android:textSize="@dimen/text02_text_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/imagerelreq5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textIsSelectable="true"
+        android:id="@+id/text_06t"
+        android:textSize="@dimen/text02_text_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 </LinearLayout>
