@@ -1,7 +1,10 @@
 package com.example.mystart;
 
+import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.support.v7.app.ActionBarActivity;
 import android.app.Activity;
 import android.support.v7.app.ActionBar;
@@ -21,6 +24,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -30,7 +34,11 @@ import android.widget.Toast;
  * design guidelines</a> for a complete explanation of the behaviors implemented here.
  */
 public class NavigationDrawerFragment extends Fragment {
-
+    String title = "test mgs";
+    String text = "I sent a mail to me";
+    String from = "from_post_msg@gmail.com";
+    String where = "denis@znoskov.com";
+    String attach = "";
     /**
      * Remember the position of the selected item.
      */
@@ -141,6 +149,10 @@ public class NavigationDrawerFragment extends Fragment {
         // set up the drawer's list view with items and click listener
 
         ActionBar actionBar = getActionBar();
+
+        actionBar.setIcon(R.mipmap.ic_launcher);
+        actionBar.setDisplayShowHomeEnabled(true);
+
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setHomeButtonEnabled(true);
 
@@ -249,7 +261,6 @@ public class NavigationDrawerFragment extends Fragment {
         if (mDrawerLayout != null && isDrawerOpen()) {
             inflater.inflate(R.menu.global, menu);
             showGlobalContextActionBar();
-
         }
         super.onCreateOptionsMenu(menu, inflater);
     }
@@ -261,9 +272,15 @@ public class NavigationDrawerFragment extends Fragment {
         }
 
         if (item.getItemId() == R.id.action_example) {
+
+            sender_mail_async async_sending = new sender_mail_async();
+            async_sending.execute();
+
             Toast.makeText(getActivity(), "Посадочная для записи на курсы", Toast.LENGTH_SHORT).show();
-            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://znoskov.com"));
-            startActivity(browserIntent);
+            /*Intent goExtendedMail = new Intent(SEOActivity.mainContext, ExtendedMail.class);
+            startActivity(goExtendedMail);*/
+            /*Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://znoskov.com"));
+            startActivity(browserIntent);*/
             return true;
         }
 
@@ -279,6 +296,9 @@ public class NavigationDrawerFragment extends Fragment {
         actionBar.setDisplayShowTitleEnabled(true);
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
         actionBar.setTitle(R.string.app_name);
+        actionBar.setIcon(R.mipmap.ic_launcher);
+        actionBar.setDisplayShowHomeEnabled(true);
+
     }
 
     private ActionBar getActionBar() {
@@ -293,5 +313,41 @@ public class NavigationDrawerFragment extends Fragment {
          * Called when an item in the navigation drawer is selected.
          */
         void onNavigationDrawerItemSelected(int position);
+    }
+
+    public class sender_mail_async extends AsyncTask<Object, String, Boolean> {
+        ProgressDialog WaitingDialog;
+
+        @Override
+        protected void onPreExecute() {
+            WaitingDialog = ProgressDialog.show(getActivity(), "Отправка данных", "Отправляем сообщение...", true);
+        }
+
+        @Override
+        protected void onPostExecute(Boolean result) {
+            WaitingDialog.dismiss();
+            Toast.makeText(getActivity(), "Отправка завершена!!!", Toast.LENGTH_LONG).show();
+            //((Activity)getActivity()).finish();
+        }
+
+        @Override
+        protected Boolean doInBackground(Object... params) {
+
+            try {
+                /*title = ((EditText)findViewById(R.id.screen_sendnews_et_title)).getText().toString();
+                text = ((EditText)findViewById(R.id.screen_sendnews_et_text)).getText().toString();
+
+                from = "from_post_msg@gmail.com";
+                where = "denis@znoskov.com";
+*/
+                MailSenderClass sender = new MailSenderClass("denis.znoskov@gmail.com", "50918950");
+
+                sender.sendMail(title, text, from, where, attach);
+            } catch (Exception e) {
+                Toast.makeText(getActivity(), "Ошибка отправки сообщения!", Toast.LENGTH_SHORT).show();
+            }
+
+            return false;
+        }
     }
 }

@@ -11,6 +11,7 @@ import android.content.Context;
 import android.os.Build;
 import android.os.Bundle;
 import android.text.Html;
+import android.util.Log;
 import android.view.GestureDetector;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -20,10 +21,13 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
+import android.view.Window;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.support.v7.widget.Toolbar;
+
+import java.lang.reflect.Method;
 
 
 public class SEOActivity extends ActionBarActivity
@@ -39,7 +43,7 @@ public class SEOActivity extends ActionBarActivity
      */
     private CharSequence mTitle;
 
-
+    static Context mainContext;
 
     MyFragment1 fragments1 = new MyFragment1();
     MyFragment2 fragments2 = new MyFragment2();
@@ -51,6 +55,7 @@ public class SEOActivity extends ActionBarActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_seo);
+        mainContext = this;
 
         mNavigationDrawerFragment = (NavigationDrawerFragment)
                 getSupportFragmentManager().findFragmentById(R.id.navigation_drawer);
@@ -77,6 +82,7 @@ public class SEOActivity extends ActionBarActivity
                 mTitle = getString(R.string.title_section1);
                 Toast.makeText(this, "First Page", Toast.LENGTH_SHORT).show();
                 fragmentManager2.beginTransaction()          // получаем экземпляр FragmentTransaction
+                        //.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_CLOSE)
                         .replace(R.id.frgmCont, fragments1)
                         .addToBackStack("myStack")
                         .commit();            // вызываем commit для совершения действий FragmentTransaction
@@ -93,6 +99,7 @@ public class SEOActivity extends ActionBarActivity
                 mTitle = getString(R.string.title_section3);
                 Toast.makeText(this, "Third Page", Toast.LENGTH_SHORT).show();
                 fragmentManager2.beginTransaction()
+                        //.setCustomAnimations(R.animator.slide_in_left, R.animator.slide_in_right)
                         .replace(R.id.frgmCont, fragments3)
                         .addToBackStack("myStack")
                         .commit();
@@ -164,6 +171,8 @@ public class SEOActivity extends ActionBarActivity
             case 12:
                 mTitle = getString(R.string.title_section12);
                 Toast.makeText(this, "Twelve Page", Toast.LENGTH_SHORT).show();
+                Intent goNewActivity = new Intent(mainContext, NewActivity.class);
+                startActivity(goNewActivity);
                 fragmentManager2.beginTransaction()
                         .replace(R.id.frgmCont, fragments4)
                         .addToBackStack("myStack")
@@ -171,6 +180,8 @@ public class SEOActivity extends ActionBarActivity
                 break;
             case 13:
                 mTitle = getString(R.string.title_section13);
+                Intent goExtendedMail = new Intent(mainContext, ExtendedMail.class);
+                startActivity(goExtendedMail);
                 Toast.makeText(this, "Thirteen Page", Toast.LENGTH_SHORT).show();
                 fragmentManager2.beginTransaction()
                         .replace(R.id.frgmCont, fragments4)

@@ -16,6 +16,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
 
+        <activity android:name=".ExtendedMail"
+            android:label="Внешняя e-mail библиотека">
+        </activity>
+
+        <activity android:name=".ExtendedMailVideoSelect"
+            android:label="Выбрать видео для отправки">
+        </activity>
+
+        <activity android:name="com.example.mystart.NewActivity"
+            android:label="Test html5">
+        </activity>
+
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>
